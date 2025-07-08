@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visualizing Math AI | Venkatdharshini</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+      color: #111;
+    }
+
+    .container-custom {
+      padding: 80px 10%;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      color: #4c8bff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #3578e5;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #444;
+      background: #eef2f7;
+      border-left: 5px solid #4c8bff;
+      padding: 10px 20px;
+      margin: 30px 0;
+    }
+
+    .images img {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: scale(0.9);
+      animation: zoomIn 1s ease-out forwards;
+    }
+
+    .images img:nth-child(1) {
+      animation-delay: 0.4s;
+    }
+
+    .images img:nth-child(2) {
+      animation-delay: 0.8s;
+    }
+
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: fadeLeft 1s ease-out forwards;
+    }
+
+    @keyframes fadeLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .nav-links {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-links a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #4c8bff;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #3578e5;
+    }
+
+    @media (max-width: 768px) {
+      .container-custom {
+        padding: 60px 5%;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid container-custom">
+    <div class="row align-items-start">
+      <!-- Left content section -->
+      <div class="col-lg-7 fade-in-left">
+        <h1 class="title">🏆 Visualizing Math AI</h1>
+        <p class="subtitle">BYTS India Hackathon — AI Edition (Overall Champions)</p>
+
+        <p>We were crowned <span class="highlight">OVERALL CHAMPIONS</span> at the <strong>BYTS India Hackathon</strong> held at <strong>Kongu Engineering College</strong> — and it was an amazing journey!</p>
+
+        <h4 class="mt-4">💡 Our Project</h4>
+        <p><strong>Visualizing Math: AI for Smarter Learning</strong> is a web app that makes math enjoyable and intuitive. It:</p>
+        <ul>
+          <li>Uses <strong>OCR</strong> to extract math from images</li>
+          <li>Applies <strong>Transformer models & RAG</strong> for step-by-step solutions</li>
+          <li>Displays <strong>dynamic visual explanations</strong></li>
+          <li>Personalizes learning based on student understanding</li>
+        </ul>
+
+        <h4 class="mt-4">⚙️ Tech Stack</h4>
+        <p>MERN Stack (MongoDB, Express, React, Node.js), Python, Flask, Tesseract.js, OpenAI</p>
+
+        <h4 class="mt-4">✨ Highlights</h4>
+        <ul>
+          <li><strong>19 AI features</strong> implemented during the hackathon</li>
+          <li>Seamless collaboration & real-time testing</li>
+          <li>Built under high pressure with strong team effort</li>
+        </ul>
+
+        <blockquote>
+          “Sleep? Zero. Chai? 100 cups. Code? 1000+ lines. Worth it? Absolutely.”
+        </blockquote>
+
+        <h4 class="mt-4">🙌 Thank You</h4>
+        <p>Gratitude to <strong>BYTS India</strong>, <strong>Nunnari Labs</strong>, the organizers, and my brilliant team for the cooperation and energy throughout the journey.</p>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="stock.html">&lt;&lt; Previous: Medicine Tracker</a>
+          <a href="notice.html">Next: CampusConnect &gt;&gt;</a>
+        </div>
+      </div>
+
+      <!-- Right image section -->
+      <div class="col-lg-3 offset-lg-1 images">
+        <img src="img.jpg" alt="Winning Certificates">
+        <img src="pic.jpg" alt="Live Demo and Coding">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediStore Manager | Venkatdharshini</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+      color: #111;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animation for images */
+    .image-animate {
+      opacity: 0;
+      transform: scale(0.9);
+      animation: fadeZoomIn 1s ease-out forwards;
+    }
+
+    .image-animate:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+
+    .image-animate:nth-child(2) {
+      animation-delay: 0.6s;
+    }
+
+    .image-animate:nth-child(3) {
+      animation-delay: 0.9s;
+    }
+
+    @keyframes fadeZoomIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    section#medistore {
+      padding: 100px 10%;
+      background: #f9f9f9;
+    }
+
+    section#medistore h2 {
+      color: #4c8bff;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      height: auto;
+      max-width: 250px;
+      object-fit: cover;
+    }
+
+    .nav-links {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-links a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #4c8bff;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #3578e5;
+    }
+
+    @media (max-width: 768px) {
+      section#medistore {
+        padding: 60px 5%;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MediStore Manager Section -->
+  <section class="fade-in" id="medistore">
+    <div class="row align-items-center">
+      <!-- Text Content (Left Side) -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="mb-3">💊 MediStore Manager</h2>
+        <p>
+          A full-stack medicine inventory management web application built using
+          <strong>Python (Flask)</strong>, <strong>SQLite</strong>, and <strong>Bootstrap 5</strong>.
+          This system helps pharmacies and medical centers track stocks, monitor expiries, apply discounts, and manage suppliers.
+        </p>
+        <ul>
+          <li>🔍 <strong>Expiry Monitoring</strong>: Alerts for soon-to-expire medicines</li>
+          <li>📉 <strong>Low Stock Alerts</strong>: Real-time low inventory notifications</li>
+          <li>💼 <strong>Supplier Records</strong>: Manage detailed supplier data</li>
+          <li>🧾 <strong>Transactions</strong>: Full history of medicine movements</li>
+          <li>🎯 <strong>Smart Discounts</strong>: Automatic discounting for expiry stock</li>
+        </ul>
+        <p><strong>Technologies Used:</strong> Python, Flask, SQLite, HTML, CSS, Bootstrap, JavaScript</p>
+
+        <!-- Navigation Links -->
+        <div class="nav-links mt-5">
+          <a href="notice.html">&lt;&lt; Previous: CampusConnect</a>
+          <a href="virtualized ai.html">Next: Visualizing Math AI &gt;&gt;</a>
+        </div>
+      </div>
+
+      <!-- Images (Right Side) -->
+      <div class="col-md-6">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 text-center">
+            <img src="1st.png" class="img-fluid image-animate" alt="Dashboard Screenshot">
+          </div>
+          <div class="col-6 text-center">
+            <img src="expire management.png" class="img-fluid image-animate" alt="Expiring Medicines Screenshot">
+          </div>
+          <div class="col-12 text-center">
+            <img src="discount.png" class="img-fluid image-animate" alt="Discount Offers Screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
